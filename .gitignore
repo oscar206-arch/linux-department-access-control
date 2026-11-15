@@ -1,0 +1,23 @@
+# Linux temporary files
+*~
+*.swp
+*.swo
+
+# Logs
+*.log
+
+# Backup files
+*.bak
+
+# VS Code
+.vscode/
+
+# JetBrains
+.idea/
+
+# Generated company directory
+company/
+
+# OS generated files
+.DS_Store
+Thumbs.db
