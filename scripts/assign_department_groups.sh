@@ -17,5 +17,5 @@ sudo usermod -aG Finance jane
 sudo usermod -aG Management ceo
 sudo usermod -aG Management manager
 
-echo "Users assigned to department groups successfully."
+echo "Users assigned to their respective department groups successfully."
 
