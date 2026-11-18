@@ -49,19 +49,28 @@ id john
 
 ## Step 3: Assign Users to Department Groups
 
-Assigned employees to their respective department groups.
+Users were assigned to their respective department groups using the usermod command.
 
-Example command:
+Department assignments:
 
-```bash
-sudo usermod -aG IT john
-```
+IT:
+- john
+- mary
+- alex
 
-Verification:
+HR:
+- susan
+- linda
 
-```bash
-groups john
-```
+Finance:
+- peter
+- jane
+
+Management:
+- ceo
+- manager1
+
+Verification was performed using the groups command.
 
 ---
 
