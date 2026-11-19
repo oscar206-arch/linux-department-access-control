@@ -92,19 +92,16 @@ These directories will serve as shared storage locations for their respective de
 
 ## Step 5: Configure Ownership
 
-Assigned group ownership to departmental directories.
+Assigned departmental directories to their respective groups using the chown command.
 
-Example command:
+Ownership configuration:
 
-```bash
-sudo chown root:IT /company/IT
-```
+- /company/IT → root:IT
+- /company/HR → root:HR
+- /company/Finance → root:Finance
+- /company/Management → root:Management
 
-Verification:
-
-```bash
-ls -ld /company/*
-```
+This allows access control to be managed through group membership.
 
 ---
 
