@@ -76,29 +76,17 @@ Verification was performed using the groups command.
 
 ## Step 4: Create Department Directories
 
-Created shared directories for each department.
+Created a central company directory and dedicated departmental folders.
 
 Directory structure:
 
-```text
 /company
 ├── IT
 ├── HR
 ├── Finance
 └── Management
-```
 
-Example command:
-
-```bash
-sudo mkdir -p /company/IT
-```
-
-Verification:
-
-```bash
-ls -l /company
-```
+These directories will serve as shared storage locations for their respective departments.
 
 ---
 
