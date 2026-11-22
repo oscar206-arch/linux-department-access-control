@@ -107,56 +107,21 @@ This allows access control to be managed through group membership.
 
 ## Step 6: Configure Permissions
 
-Applied secure directory permissions.
+Applied 770 permissions to all departmental directories.
 
-Example command:
+This allows:
 
-```bash
-sudo chmod 770 /company/IT
-```
+- Full access for the owner
+- Full access for department members
+- No access for other users
 
-Permission meaning:
+SGID was enabled to ensure new files inherit the department group automatically.
 
-```text
-Owner  : Full Access
-Group  : Full Access
-Others : No Access
-```
-
-Verification:
+Example:
 
 ```bash
-ls -ld /company/*
-```
-
----
-
-## Step 7: Enable Group Collaboration
-
-Enabled SGID on departmental directories.
-
-Example command:
-
-```bash
-sudo chmod g+s /company/IT
-```
-
-Purpose:
-
-- New files automatically inherit the department group.
-- Simplifies collaboration among department members.
-
-Verification:
-
-```bash
-ls -ld /company/*
-```
-
-Expected:
-
-```text
-drwxrws---
-```
+chmod 770 /company/IT
+chmod g+s /company/IT
 
 ---
 
